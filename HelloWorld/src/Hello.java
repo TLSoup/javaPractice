@@ -19,5 +19,18 @@ public class Hello {
         if ((topScore > 90 || (secondTopScore <= 90))) {
             System.out.println("Either or both of the conditions are true");
         }
+        boolean isCar = false;
+        if(!isCar) {
+            System.out.println("This is not supposed to happen");
+        }
+        String makeOfCar = "Volkswagen";
+       // boolean isDomestic = makeOfCar == "Volkswagen" ? false : true;
+        boolean isDomestic = (makeOfCar != "Volkswagen");
+
+        if (isDomestic) {
+            System.out.println("This car is domestic to our country.");
+        }
+        String s = (isDomestic) ? "This caris domestic" : "This car is not domestic";
+        System.out.println(s);
     }
 }
