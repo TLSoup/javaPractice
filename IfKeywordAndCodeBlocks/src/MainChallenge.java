@@ -1,27 +1,18 @@
 public class MainChallenge {
 
     public static void main(String[] args) {
-
         boolean gameOver = true;
         int score = 800;
-        int levelCompleted = 8;
+        int levelCompleted = 5;
         int bonus = 100;
 
-        int finalScore = score;
-
-        calculateScore(true, 800, levelCompleted, bonus);
+        calculateScore(gameOver, score, levelCompleted, bonus);
 
         score = 10000;
         levelCompleted = 8;
         bonus = 200;
 
-        finalScore = score;
-
-        //Line below is the same as (gameOver == true)
-        if (gameOver) {
-            finalScore += (levelCompleted * bonus);
-            System.out.println("Your final score was " + finalScore);
-        }
+        calculateScore(gameOver, score, levelCompleted, bonus);
     }
 
     public static void calculateScore(boolean gameOver, int score, int levelCompleted, int bonus) {
