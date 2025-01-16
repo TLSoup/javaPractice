@@ -13,7 +13,7 @@ public class MinimumElementChallenge {
 
     private static int[] readIntegers() {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter the number of integers: ");
+        System.out.print("Enter a list of integers, separated by commas: ");
         String input = scanner.nextLine();
 
         String[] splits = input.split(",");
