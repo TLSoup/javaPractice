@@ -28,10 +28,13 @@ public class MinimumElementChallenge {
 
     private static int findMin(int[] array){
         int min = Integer.MAX_VALUE;
-        for(int el: array) {
-            min = el;
-        }
-        return min;
 
+        for (int el : array) {
+            if (el < min) {
+                min = el;
+            }
+        }
+
+        return min;
     }
 }
